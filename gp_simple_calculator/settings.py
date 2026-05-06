@@ -135,15 +135,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 ALLOWED_HOSTS = [
-    'gpsimplecalculator-production.up.railway.app',
-    'your-app-name.onrender.com',   # ← add this
+    'your-app-name.onrender.com',  
     'localhost',
     '127.0.0.1',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://gpsimplecalculator-production.up.railway.app',
-    'https://your-app-name.onrender.com',   # ← add this too
+    'https://your-app-name.onrender.com',   
 ]
 
 CSRF_COOKIE_SECURE = True
