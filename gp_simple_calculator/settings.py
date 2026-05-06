@@ -144,7 +144,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #     'https://gp-simple-calculator2.onrender.com',
 # ]
 
-DEBUG = True
+os.getenv(DEBUG = True)
 
 ALLOWED_HOSTS = [
     'gp-simple-calculator2.onrender.com',
