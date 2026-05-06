@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%^i7hd-(_0qpcofx3%bl+t72o3$l))4(+-q7vt#iffd$di$q%y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
 
 
 # Application definition
@@ -134,14 +134,22 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
+# ALLOWED_HOSTS = [
+#     'gp-simple-calculator2.onrender.com',
+#     'localhost',
+#     '127.0.0.1',
+# ]
+
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://gp-simple-calculator2.onrender.com',
+# ]
+
+DEBUG = True
+
 ALLOWED_HOSTS = [
     'gp-simple-calculator2.onrender.com',
     'localhost',
     '127.0.0.1',
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://gp-simple-calculator2.onrender.com',
 ]
 
 CSRF_COOKIE_SECURE = True
